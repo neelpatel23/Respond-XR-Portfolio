@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://respondxr.tech/sitemap.xml
+
+# Disallow unnecessary files
+Disallow: /images/generate-placeholders.html
+Disallow: /.git/
+Disallow: /README.md
+
+# Allow important pages
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /images/
+
+# Crawl delay (optional - helps prevent overwhelming the server)
+Crawl-delay: 1
