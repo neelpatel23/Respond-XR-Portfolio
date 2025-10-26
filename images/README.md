@@ -93,26 +93,32 @@ This directory contains all the visual assets for the Respond XR portfolio websi
 
 ## Team Section
 
+### Team Group Photo
+- **File**: `team-group-photo.jpg`
+- **Size**: 1200x675px (16:9 aspect ratio)
+- **Description**: Professional team group photo
+- **Content**: All team members in professional setting, good lighting, clean background
+
 ### Team Member Photos
-- **File**: `team-placeholder-1.jpg`
+- **File**: `team-neel.jpg`
 - **Size**: 300x300px (square, professional headshot)
-- **Description**: Professional headshot for Alex Rodriguez
+- **Description**: Professional headshot for Neel Patel
 - **Content**: Professional business portrait, clean background
 
 - **File**: `team-placeholder-2.jpg`
 - **Size**: 300x300px
-- **Description**: Professional headshot for Dr. Sarah Chen
-- **Content**: Professional medical professional portrait
+- **Description**: Professional headshot for Team Member 2
+- **Content**: Professional portrait, clean background
 
 - **File**: `team-placeholder-3.jpg`
 - **Size**: 300x300px
-- **Description**: Professional headshot for Marcus Johnson
-- **Content**: Professional designer/tech professional portrait
+- **Description**: Professional headshot for Team Member 3
+- **Content**: Professional portrait, clean background
 
 - **File**: `team-placeholder-4.jpg`
 - **Size**: 300x300px
-- **Description**: Professional headshot for Emily Zhang
-- **Content**: Professional engineer portrait
+- **Description**: Professional headshot for Team Member 4
+- **Content**: Professional portrait, clean background
 
 ## Testimonials
 

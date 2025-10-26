@@ -368,7 +368,7 @@ class ResponderXRApp {
         <div class="video-loaded">
           <h3>Demo Video Would Play Here</h3>
           <p>In production, this would embed the actual YouTube video</p>
-          <p>Video URL: https://youtube.com/watch?v=[demo-video-id]</p>
+          <p>Video URL: https://youtu.be/8SEaPSGeeTU</p>
         </div>
       `;
     }, 1500);
@@ -378,24 +378,35 @@ class ResponderXRApp {
   // FEATURE CARDS INTERACTION
   // ===========================
 
-  setupFeatureCards() {
-    const featureCards = document.querySelectorAll('.feature-card');
-    
-    featureCards.forEach(card => {
-      card.addEventListener('mouseenter', () => {
-        card.classList.add('hovered');
-      });
-      
-      card.addEventListener('mouseleave', () => {
-        card.classList.remove('hovered');
-      });
-      
-      card.addEventListener('click', () => {
-        const feature = card.dataset.feature;
-        this.handleFeatureCardClick(feature, card);
-      });
-    });
-  }
+    setupFeatureCards() {
+        const featureCards = document.querySelectorAll('.feature-card');
+        const featuresGrid = document.querySelector('.features-grid');
+        
+        featureCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('hovered');
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('hovered');
+            });
+            
+            card.addEventListener('click', () => {
+                const feature = card.dataset.feature;
+                this.handleFeatureCardClick(feature, card);
+            });
+        });
+
+        // Enhanced horizontal scrolling for features
+        if (featuresGrid) {
+            featuresGrid.addEventListener('wheel', (e) => {
+                if (e.deltaY !== 0) {
+                    e.preventDefault();
+                    featuresGrid.scrollLeft += e.deltaY;
+                }
+            });
+        }
+    }
 
   handleFeatureCardClick(feature, cardElement) {
     // Remove active state from all cards
